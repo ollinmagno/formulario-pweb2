@@ -1,0 +1,59 @@
+<meta charset="UTF-8">
+<input type="text" id="numero" />
+<input type="submit" id="adivinhar" value="Compare com o meu segredo!"/>
+<script>
+  //  alert(Podemos fazer mais com Javascript);
+   /* write printa na tela a msg apresentada.
+    document.write("Minha idade é: ");
+    document.write(21);*/
+  
+  /* declarando variavel
+    var ano = 2012;
+    document.write("<h1>Eu nasci em: "+ (ano - 25) + "</h1><br>");*/
+  
+    function mostra(frase){
+        document.write(frase + "<br>");
+    };
+    /*
+    mostra("Eu nasci em: "+ (ano - 25)); ---> parâmetro para 'frase'
+    console.log("Esta mensagem aparece apenas no log");*/
+
+    /*
+    var nome = prompt("Bom dia! Qual é o seu nome ?");
+    document.write("Bem vindo, "+ nome);
+    
+    var idade = prompt(nome + ", quantos anos você tem ?");
+    document.write("<br>"+ nome + " tem " + idade + " anos.");
+    */
+    /*
+    var vitorias = prompt("Quantos jogos o CDC Futebol clube venceu?");
+    var empates = prompt("Quantos jogos o CDC Futebol clube empatou ?");
+    var pontos = (parseInt(vitorias) * 3)+ parseInt(empates); //function parseInt retorna um inteiro
+
+    if(pontos > 42){
+        mostra("O CDC futebol clube não será rebaixado!");
+    }else {
+        mostra("Lamento informar. Mas acho que o CDC futebol será rebaixado");
+    }
+
+    var anoDeCopa = 1930;
+    while(anoDeCopa <= 2022){
+        alert(anoDeCopa + " tem copa!");
+        anoDeCopa += 4;
+    } */
+    /*
+    for(var linha = 0; linha < 3; linha += 1){
+        for(var coluna = 0; coluna < 10; coluna += 1){
+            document.write("*");
+        }
+            document.write("<br>");
+    }*/
+    
+    var caixaDoNumero = document.getElementById("numero");
+    var botaoAdivinhar = document.getElementById("adivinhar");
+    var botaoClicado = function (){
+        alert(caixaDoNumero.value);
+    };
+    botaoAdivinhar.onclick = botaoClicado;
+</script>
+<br>
